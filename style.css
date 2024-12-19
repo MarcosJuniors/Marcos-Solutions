@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* Resetando o estilo padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fontes */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+header {
+  background: #333;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .logo h1 {
+  color: #e53939;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e53939;
+}
+
+/* Home Section */
+.home-section {
+  background: #e53939;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background: #fff;
+  color: #e53939;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+  padding: 50px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #e53939;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact-form label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background: #e53939;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
